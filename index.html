@@ -2620,14 +2620,14 @@ var CLOSE3 = 'Close. These steps give exact decimals, so keep all three decimal 
 
 /* ---------------- the sections ---------------- */
 var SECTIONS_P = [
-  { id: 'sec-equil', title: 'Equilibria and Nullclines', lede: 'This goes with BDH Section 5.1, page 460, Section 5.2, pages 477 to 482, and Worked Example 11.1. Lebl’s [Section 8.1](' + T_EQ[0] + ') calls equilibria “critical points”.' },
-  { id: 'sec-partial', title: 'Partial Derivatives', lede: 'This goes with the explainer Partial Derivatives and the Jacobian. Paul’s [Partial Derivatives](' + T_PD[0] + ') page works more examples.' },
-  { id: 'sec-jac', title: 'The Jacobian', lede: 'This goes with BDH Section 5.1, page 466, and Worked Example 11.2.' },
-  { id: 'sec-class', title: 'Classifying an Equilibrium', lede: 'This goes with BDH Section 5.1, pages 468 and 469, and Worked Example 11.3. Lebl’s [Section 8.2](' + T_CLASS[0] + ') has the same table of cases.' },
-  { id: 'sec-pend', title: 'The Pendulum’s Equilibria', lede: 'This goes with BDH Section 5.3, pages 495 and 496, and Worked Example 11.4. Lebl’s [Section 8.3](' + T_PEND[0] + ') treats the same pendulum.' },
-  { id: 'sec-energy', title: 'The Pendulum’s Energy', lede: 'This goes with BDH Section 5.3, page 497, and the explainer The Pendulum, Pictured Whole.' },
-  { id: 'sec-euler', title: 'Euler’s Method for a System', lede: 'This goes with BDH Section 2.5, pages 196 to 200, and Worked Example 11.5.' },
-  { id: 'sec-sir', title: 'The SIR Model', lede: 'This goes with BDH Section 2.7, pages 209 to 213, and Worked Example 11.6. Here `α` and `β` are two rates of the epidemic, not the parts of a complex eigenvalue.' }
+  { id: 'sec-equil', title: 'Equilibria and Nullclines', lede: 'This goes with BDH Section 5.1, page 460, Section 5.2, pages 477 to 482, and Unit 11 Worked Example 11.1. Lebl’s [Section 8.1](' + T_EQ[0] + ') calls equilibria “critical points”.' },
+  { id: 'sec-partial', title: 'Partial Derivatives', lede: 'This goes with the section Partial Derivatives and the Jacobian in the Unit 11 Reading Guide, Part 1. Paul’s [Partial Derivatives](' + T_PD[0] + ') page works more examples.' },
+  { id: 'sec-jac', title: 'The Jacobian', lede: 'This goes with BDH Section 5.1, page 466, and Unit 11 Worked Example 11.2.' },
+  { id: 'sec-class', title: 'Classifying an Equilibrium', lede: 'This goes with BDH Section 5.1, pages 468 and 469, and Unit 11 Worked Example 11.3. Lebl’s [Section 8.2](' + T_CLASS[0] + ') has the same table of cases.' },
+  { id: 'sec-pend', title: 'The Pendulum’s Equilibria', lede: 'This goes with BDH Section 5.3, pages 495 and 496, and Unit 11 Worked Example 11.4. Lebl’s [Section 8.3](' + T_PEND[0] + ') treats the same pendulum.' },
+  { id: 'sec-energy', title: 'The Pendulum’s Energy', lede: 'This goes with BDH Section 5.3, page 497, and the section The Pendulum, Pictured Whole in the Unit 11 Reading Guide, Part 2.' },
+  { id: 'sec-euler', title: 'Euler’s Method for a System', lede: 'This goes with BDH Section 2.5, pages 196 to 200, and Unit 11 Worked Example 11.5.' },
+  { id: 'sec-sir', title: 'The SIR Model', lede: 'This goes with BDH Section 2.7, pages 209 to 213, and Unit 11 Worked Example 11.6. Here `α` and `β` are two rates of the epidemic, not the parts of a complex eigenvalue.' }
 ];
 
 /* ---------------- closing figures: trajectories drawn as short segments ---------------- */
@@ -2809,7 +2809,7 @@ var PROBLEMS = [
         ['Undecided, because `D < 0`', 'Only a center or `D = 0` leaves the question open. A saddle linearization decides.', T_CENTER]] },
       { lead: 'The other two equilibria, `(0, 0)` and `(F{7}{2}, 0)`, are a source and a saddle. What happens to populations that start near `(2, 3)`?', ok: 0, pick: [
         ['Both species survive and settle at 2 thousand and 3 thousand', 'Solutions near a sink come in to it. Here the two species live together.'],
-        ['One species dies out, depending on where they start', 'That happens when the coexistence point is a saddle, as in Worked Example 11.3. Here `(2, 3)` is a sink.'],
+        ['One species dies out, depending on where they start', 'That happens when the coexistence point is a saddle, as in Unit 11 Worked Example 11.3. Here `(2, 3)` is a sink.'],
         ['They rise and fall forever around `(2, 3)`', 'Cycling like that needs a center. Here the eigenvalues are real and negative, so solutions come straight in.']] }],
     graph: function () {
       var starts = [[0.3, 0.3], [3.9, 0.15], [0.15, 6.8], [3.9, 6.8], [3.9, 3.6]], segs = [];
